@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css" />
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDEe7zcyacSqJWNhMcxbfkdnwxkd1XF1sc",
+            authDomain: "plearnhub-be749.firebaseapp.com",
+            databaseURL: "https://plearnhub-be749.firebaseio.com",
+            projectId: "plearnhub-be749",
+            storageBucket: "plearnhub-be749.appspot.com",
+            messagingSenderId: "429650509455",
+            appId: "1:429650509455:web:adadc8b6215fe21011fafa",
+            measurementId: "G-HG7G7ZEFPC",
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        var db = firebase.firestore();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <!-- <ons-navigator id="myNavigator" page="tabs.html"></ons-navigator>
+    <template id="tabs.html">
+      <ons-page>
+        <ons-toolbar>
+          <div class="center">Home</div>
+          <div class="right">
+            <ons-toolbar-button id="signout">sign out</ons-toolbar-button>
+          </div>
+        </ons-toolbar>
+
+
+      </ons-page>
+    </template> -->
+    <ons-tabbar position="auto">
+        <ons-tab page="./views/signin.html">
+        </ons-tab>
+
+
+        <!-- <ons-tab page="./views/signup.html">
+    </ons-tab>
+    </ons-tabbar>  -->
+        <script>
+            document.addEventListener("prechange", function(event) {
+                if (event.tabItem) {
+                    document.querySelector(
+                        "ons-toolbar .center"
+                    ).innerHTML = event.tabItem.getAttribute("label");
+                }
+            });
+        </script>
+</body>
+
+</html>

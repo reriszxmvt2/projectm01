@@ -1,0 +1,124 @@
+body {
+    font-family: Inter;
+    font-style: normal;
+}
+
+.background {
+    background-color: #242A38;
+    background-color: #242A38;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box
+}
+
+.font-lookhub {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F3506F;
+}
+
+.font-welcome {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.input-box {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.forgot {
+    text-align: right;
+    color: #F3506F;
+    font-size: small;
+    margin-top: 1%;
+}
+
+.box-login {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.btn-login {
+    background-color: #F3506F;
+    border-color: #F3506F;
+    color: #FFFFFF;
+}
+
+.btn-login:hover {
+    color: #fff;
+    background-color: #f15975;
+    border-color: #f15975;
+}
+
+.sign-up {
+    text-align: center;
+    color: #F3506F;
+    font-size: small;
+    margin-top: 1%;
+}
+
+.lookHub-logo {
+    height: auto;
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.normal-font-small {
+    color: #FFFFFF;
+    font-size: small;
+    margin: 10px;
+}
+
+.color-font-small {
+    color: #F3506F;
+    font-size: small;
+}
+
+.font-signin-api {
+    color: #FFFFFF;
+    font-size: small;
+    margin-top: 25%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-facebook {
+    color: #fff;
+    background-color: #3D5A98;
+    border-color: #3D5A98;
+    margin-right: 10px;
+}
+
+.btn-google {
+    color: #2A3141;
+    background-color: #fff;
+    border-color: #fff;
+    margin-left: 10px;
+}
+
+.img-icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.wait {
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
