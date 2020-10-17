@@ -1,0 +1,25 @@
+<ons-page id="avengers_page">
+    <ons-toolbar>
+        <div class="left">
+          <ons-back-button>Home</ons-back-button>
+        </div>
+        <div class="center"></div>
+      </ons-toolbar>
+
+    <div id="detail1"></div>
+<script>
+    document.addEventListener('init', function(event) {
+  var page = event.target;
+
+  if (page.id === 'page1') {
+    page.querySelector('#push-button').onclick = function() {
+      document.querySelector('#myNavigator').pushPage('home.html', {data: {title: 'home'}});
+    };
+  } else if (page.id === 'page2') {
+    page.querySelector('ons-toolbar .center').innerHTML = page.data.title; 
+  }
+});
+</script>
+    
+</ons-page>
+
